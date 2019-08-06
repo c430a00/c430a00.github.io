@@ -1,0 +1,366 @@
+/*
+定义通用的头和导航栏样式
+*/
+@import 'reset.css';
+
+/*自定义字体*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  /*-moz-osx-font-smoothing: grayscale;*/
+}
+
+/*头部首页收藏信息*/
+#headmessage{
+	background-color: #f4f4f4;
+	min-width: 1200px;
+}
+
+#headmessage li{
+	float: left;
+	height: 25px;
+	padding: 2px;
+}
+#headmessage span{
+	font-size: 12px;
+}
+#headmessage a:hover{
+	color: #f40;
+}
+
+/*头部公司LOGO、搜索 、联系方式*/
+#headlogo ul{
+	margin-right: 0;
+	height: 58px;
+	width: 100%;/*父元素的宽度*/
+	min-width: 1200px;
+}
+
+#headlogo li{
+	float: left;
+	height: 58px;
+	padding: 2px;
+	margin-left: 20px;
+}
+#headlogo li img{	
+	height: 58px;
+
+}
+#headlogo li h1{
+	font-size: 28px;	
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: -3px;
+	color: #57585a;
+}
+#headlogo li h2{	
+	font-size: 14px;	
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: -6px;
+	color: #57585a;
+}
+#headlogo li span{
+	font-size:20px;
+	/*color: #3b3b3b;*/
+	color: rgb(192,192,192);
+}
+
+#headlogo li.telephone{
+	font-weight:bold;
+	text-height: 58px;
+	padding: 0;
+	margin-top: 15px;
+	margin-right: 20px; 
+	float: right;
+}
+
+#headlogo li a{
+	font-size:22px;
+	color: #c00;
+
+}
+
+/*导航搜索*/
+#headserch{
+	min-width: 1200px;
+	margin-top: 2px;
+	font-weight: bold;
+	background-color: #3c3f4b;
+	height: 52px;
+	border-radius: 7px;
+	font-family: "Microsoft Yahei";
+}
+#headserch a{
+	width: 15%;
+	margin: 15px 0 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(192,192,192);
+	overflow: hidden;
+}
+#headserch a:hover{
+	color: #fff;
+}
+
+#headserch ul{
+	width: calc(100% - 190px - 300px);
+	max-width: 750px;
+}
+#headserch ul li{
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
+	/*padding: 0px 15px;*/
+	/*border-left: 1px solid rgb(192,192,192);*/
+}
+#headserch li a{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	text-align: center;
+	color: rgb(192,192,192);
+}
+#headserch li a:hover{
+	color: #fff;
+}
+#headserch form{
+	display: block;
+	width: 25%;
+	max-width: 300px;
+}
+#headserch form input{
+	float: left;
+	width: 100%;
+	max-width: 200px;
+	height: 25px;
+	margin: 10px;
+	color: rgb(192,192,192);
+	border-radius: 5px;
+}
+#headserch form input.submit{
+	width: 50px;
+	height: 30px;
+	margin-left: 0px;	
+	text-align: center;
+	color: #333;
+}
+
+/*中间内容*/
+#content{
+	min-width: 1200px;
+}
+/*左侧导航列表*/
+#content .two{
+	width: 15%;
+	min-height: 612px;
+	background-color: #55585a;
+	border-radius: 5px;
+	color: #fff;
+}
+ 		/*不同层级的菜单字体大小不同*/
+#content .two .folderOne label{
+	font-size: 14px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px ;
+	border-bottom: 1px solid #d9d9d9;
+}
+#content .two .folderOne ul{
+	padding: 0;
+}
+#content .two .folderOne ul li{
+	margin: 0px 10px;
+	min-width: 170px;
+	height: 20px;
+	font-size: 12px;
+}
+#content .two .folderTwo a{
+	min-width: 190px;
+	height: 20px;
+	font-size:12px;
+	padding-left:1em;
+	color: #fff;
+}
+#content .two ul li span{
+	float: right;
+	color: #fff;
+}
+
+ 		/*隐藏input*/
+#content .two li input{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    height: 1em;
+    min-width:1em;
+    top: 0;
+}
+
+
+		/*所有菜单设置统一样式*/
+#content .two li {
+	list-style: none;
+}
+
+#content .two li input + ul{
+ 	display: none;
+ }
+
+#content .two li label {
+ 	min-width:190px;
+ 	cursor: pointer;
+ 	display: block;
+ 	margin:0;
+ 	padding:0;
+ 	white-space:nowrap;
+ 	overflow:hidden;
+ 	text-overflow: ellipsis;
+}  
+#content .two li label:hover,li label:focus{
+	margin: 0;
+	min-width: 190px;
+	background: #ff6700;
+	font-weight: bold;
+}
+
+#content .two .folderOne li:hover{
+	margin: 0;
+	padding: 0;
+	min-width: 190px;
+	height: 20px;
+	background: #ff6700;
+	font-weight: bold;
+}
+
+		/*当input被选中时，给所有展开的子菜单设置样式*/
+#content .two input:checked + ul {
+	height: auto;
+	display: block;
+	background: #666;
+}  
+#content .two input:checked + ul > li { 
+	height: auto;
+}  
+
+
+/*右侧内容显示*/
+#content{
+	/*display: -webkit-box;*/
+}
+
+#content .content_txt{
+	/*width: calc(100% - 190px);*/
+	width: 85%;
+	height: 100%;
+	min-height: 612px;
+	min-height: 612px;
+}
+
+#content iframe{
+	width: 99%;
+	height: 100%;
+	min-height: 612px;
+	min-height: 612px;
+	margin: 5px 0 0 5px;
+	border: none;
+}
+
+/*底部版权*/
+#copyright{
+	min-width: 1200px;
+	margin-top: 2px;
+	height: 140px;
+	font-family: "Microsoft Yahei";
+	background-color: #f4f4f4;
+}
+
+#copyright ul{
+	width: 100%;/*父元素的宽度*/
+}
+#copyright li{
+	float: left;
+	margin-left: 20px;
+}
+#copyright ul li h3{
+	line-height:1em;
+	font-size: 16px;
+	font-weight: bold;
+}
+#copyright ul li img{
+	width: 80px;
+
+}
+
+#copyright ul li.wxgzh{
+	float: right;
+	text-align: center;
+	font-size: 12px;
+	margin-right: 80px;
+	margin-top: 10px;
+}
+#copyright ul li p{
+	margin: 0;
+	line-height: 12px;
+	font-weight: bold;
+}
+
+#copyright ul span{
+	margin: 0;
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+	color: #333;
+}
+.fpplb{
+	margin:0 20px;
+}
+.fpplb span{
+	margin-right: 10px;
+	color: #666666;
+}
+
+/*右侧固定QQ和回到顶部栏*/
+#fixedBox_view_qq li{
+	width: 62px;
+	height: 62px;
+	background-color: #37a6d1;
+	border:1px solid #fff;
+	opacity: 70%;
+}
+#fixedBox_view_qq li a{
+	width: 100%;
+	height: 100%;
+}
+
+
+#fixedBox_view_qq ul li img{
+	width: 32px;
+	height: 32px;
+	margin:15px;
+}
+
+#fixedBox_view_qq {
+	position: fixed;
+	z-index: 99;
+	top: 40%;
+	right: 10px;
+}
+

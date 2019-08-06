@@ -1,0 +1,12 @@
+/*
+@规则
+	@charset	设置样式表的编码
+	@import		导入其他样式文件
+	@media		媒体查询
+	@font-face	自定义字体
+*/
+
+/*导入样式重置文件*/
+@import 'reset.css';
+@import 'head.css';
+
