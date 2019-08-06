@@ -1,0 +1,73 @@
+/*
+首页 网页样式
+*/
+@import 'reset.css';
+
+#home_html {
+	height: 100%;
+}
+/*滚动图片*/
+#home_html #container{
+	width: 1000px;
+	height: 400px;
+	overflow: hidden;
+}
+#home_html #container #photos{
+	width: 8000px;
+	animation: switch 15s ease-out infinite;
+}
+
+#photos img{
+	float: left;
+	width: 1000px;
+	height: 400px;
+}
+
+@keyframes switch {
+	0%, 10% {
+		margin-left: 0;
+	}
+	12%, 22% {
+		margin-left: -1000px;
+	}
+	24%, 34% {
+		margin-left: -2000px;
+	}
+	36%, 46% {
+		margin-left: -3000px;
+	}
+	48%, 58% {
+		margin-left: -4000px;
+	}
+	60%, 72% {
+		margin-left: -5000px;
+	}
+	74%, 85% {
+		margin-left: -6000px;
+	}
+	87%, 100% {
+		margin-left: -7000px;
+	}
+}
+#home_html .home_title{
+	width: 1000px;
+	height:150px;
+	margin: 0;
+	background-image: url('../images/home_title.jpg');
+}
+#home_html h2{
+	color: #282923;
+	font-weight: bold;
+	font-size: 50px;
+	margin:  20px 0 0px 20px;
+}
+#home_html h3{
+	color: #a8a8a8;
+	font-size: 20px;
+	margin:  0 0 0 10em;
+}
+#home_html span{
+	color: #a8a8a8;
+	font-size: 60px;
+	margin:  0 0 0 10em;
+}
