@@ -1,0 +1,12 @@
+/*第三类产品 接触网检测 产品页布局*/
+@import 'reset.css';
+@import 'alllocation.css';
+
+/*接触网磨耗仪页面布局*/
+#jcwmhy03_html h1{
+	font-size: 20px;
+	text-align: center;
+}
+#jcwmhy03_html p{
+	text-indent: 2em;
+}

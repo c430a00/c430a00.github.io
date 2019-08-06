@@ -1,0 +1,51 @@
+/*所有产品html页，顶部位置栏布局*/
+@import 'reset.css';
+.alllocation{
+	background: #abb1ba;
+	height: 22px;
+	margin: 0;
+}
+.alllocation ul{
+	float: right;
+
+}
+
+.alllocation ul li{
+	float: left;
+	height: 25px;
+	padding: 2px;
+}
+.alllocation ul li a:hover{
+	color: #f40;
+}
+
+.allcontent img{
+	width: 1000px;
+	max-width: 1020px;
+	margin: 0 auto;
+	text-align: center;
+}
+.allcontent table{
+	text-align: center;
+}
+
+.allcontent p{
+	text-indent: 2em;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+h1{
+	font-size: 22px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+
+
+
