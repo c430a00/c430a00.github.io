@@ -1,0 +1,103 @@
+/*样式重置（初始化）*/
+@charset "utf-8"
+body,div,iframe,li,p,h1,h2,h3,h4{
+	margin: 0;
+	height: 100%;
+	font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+}
+h1{
+	text-align: center;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img{
+	border: 0;
+	vertical-align: middle;
+}
+
+a{
+	text-decoration: none;
+	color: #3c3c3c;
+}
+
+i{
+	font-style: normal;
+}
+
+input{
+	margin: 0;
+	padding: 0;
+}
+
+button{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body{
+	font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+	color: #3c3c3c;
+}
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.layer{
+	width: 95%;
+	margin: 0 auto;
+}
+.layer_cont{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.cf40{
+	color: #f40;
+}
+
+.cf50{
+	color: #f50;
+}
+
+.mt10{
+	margin-top: 10px;
+}
+.mr5{
+	margin-right: 5px;
+}
+.mr7{
+	margin-right: 7px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.mr100{
+	margin-right: 100px;
+}
+
+.sj2{
+	text-indent: 2em;
+}
+.sj4{
+	text-indent: 4em;
+}
+.sj6{
+	text-indent: 6em;
+}

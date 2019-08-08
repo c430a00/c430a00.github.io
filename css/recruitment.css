@@ -1,0 +1,66 @@
+/*
+定义招贤纳士 网页样式
+*/
+@import 'reset.css';
+@import 'alllocation.css';
+
+
+#recruitment_html {
+	width: 100%;
+	height: 567px;
+}
+
+/*图片*/
+#recruitment_html .content_picture {
+   	width: 100%;
+    height: 341px; 
+    background: url(../images/join_us_banner.png) center;
+    margin: 0px auto; 
+    overflow: hidden;
+}
+#recruitment_html .content_picture span{
+   	font-weight:bold;
+   	font-size: 30px;
+   	text-align: center;
+   	color: #6c6861;
+}
+/*福利布局*/
+#recruitment_html .content_fuli h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+#recruitment_html .content_fuli li {
+	float: left;
+	width: 200px;
+	height: 120px;
+	text-align: center;
+	font: inherit;
+	font-size: 14px;
+	margin-top: 60px;
+}
+#recruitment_html .content_fuli li img{
+	width: 100px;
+	height: 100px;
+}
+#recruitment_html .content_fuli li p{
+	font-weight: bold;
+}
+/*期待加入*/
+#recruitment_html .joinus h2{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 60px;
+}
+
+#recruitment_html .joinus .job_1{
+	font-size: 12px;
+	margin: 10px;	
+	line-height: 0.5em;
+}
+#recruitment_html .joinus .job_1 p{
+
+	margin: 2em;	
+
+}
